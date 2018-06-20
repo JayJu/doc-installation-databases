@@ -5,7 +5,17 @@
     * 참고자료: [SQL Server를 설치 하는 빠른 시작: Red Hat에 SQL Server를 설치하고 데이터베이스 만들기](https://docs.microsoft.com/ko-kr/sql/linux/quickstart-install-connect-red-hat?view=sql-server-linux-2017)
 ---
 
-#### 1. 사용자 추가 및 권한 설정
+#### 1. yum 업데이트
+  * yum update
+  ```
+  # yum update
+  ```
+  * 관리자도구설치
+  ```
+  # yum groupinstall 'Development Tools'
+  '''
+  
+#### 2. 사용자 추가 및 권한 설정
   * 사용자 추가
   ```
   # useradd infra -m -d /home/infra
