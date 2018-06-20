@@ -1,3 +1,3 @@
-# My Awesome Book
+# Installation guide for databases
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+플랫폼 별 벤더별 데이터베이스 설치 가이드 입니다. 
