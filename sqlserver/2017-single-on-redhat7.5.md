@@ -45,3 +45,13 @@
   ```
   $ sudo /opt/mssql/bin/mssql-conf setup
   ```
+  * 방화벽 오픈
+  ```
+  $ sudo firewall-cmd --zone=public --add-port=1433/tcp --permanent
+  $ sudo firewall-cmd --reload
+  ```
+  
+  * 서비스 실행/확인
+  ```
+  $ sudo systemctl status mssql-server
+  ```
