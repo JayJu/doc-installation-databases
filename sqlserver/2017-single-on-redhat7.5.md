@@ -54,4 +54,5 @@
   * 서비스 실행/확인
   ```
   $ sudo systemctl status mssql-server
+  $ sudo journalctl -u mssql-server --no-pager | more
   ```
