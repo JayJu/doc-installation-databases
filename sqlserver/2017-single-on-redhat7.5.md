@@ -55,4 +55,5 @@
   ```
   $ sudo systemctl status mssql-server
   $ sudo journalctl -u mssql-server --no-pager | more
+  $ sudo cat /var/opt/mssql/mssql.conf 
   ```
