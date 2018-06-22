@@ -95,4 +95,15 @@
   ```  
 ---
 
-# 환경설정방법
+## 환경설정방법
+1. 파라미터 설정
+  * mssql-conf set 파라미터명 파라미터값
+  ```
+  $ sudo /opt/mssql/bin/mssql-conf set memory.memorylimitmb 3328
+  ```
+  * 서비스 재시작
+  ```
+  $ sudo systemctl restart mssql-server
+  ```
+2. 파라미터 해지/삭제
+3. 
