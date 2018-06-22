@@ -101,6 +101,7 @@
   ```
   $ sudo /opt/mssql/bin/mssql-conf set memory.memorylimitmb 3328
   ```
+  
   * 서비스 재시작
   ```
   $ sudo systemctl restart mssql-server
