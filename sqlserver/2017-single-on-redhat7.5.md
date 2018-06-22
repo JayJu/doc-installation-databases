@@ -32,7 +32,7 @@
   infra     ALL=(ALL)       ALL
   ```
 
-#### 3. SQLServer 설치
+#### 3. SQL Server 설치
   * repository 구성 파일 다운로드
   ```
   # su - infra
@@ -59,4 +59,28 @@
   $ sudo systemctl status mssql-server
   $ sudo journalctl -u mssql-server --no-pager | more
   $ sudo cat /var/opt/mssql/mssql.conf 
+  ```
+  
+#### 4. SQL Server command line tools 설치
+  * repository 구성 파일 다운로드
+  ```
+  # su - infra
+  $ sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
+  ```
+  
+  * 이전 버전의 mssql-tools 가 설치된 경우 삭제
+  ```
+  $ sudo yum remove unixODBC-utf16 unixODBC-utf16-devel
+  ```
+
+  * unixODBC 개발자 패키지와 mssql-tools 설치
+  ```
+  $ sudo yum install -y mssql-tools unixODBC-devel
+  ```
+  
+  * path 환경변수 추가
+  ```
+  echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
+  echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+  source ~/.bashrc
   ```
