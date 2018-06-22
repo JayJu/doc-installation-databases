@@ -84,3 +84,12 @@
   echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
   source ~/.bashrc
   ```
+  
+  * as 로 로그인
+  ```
+  $ sqlcmd -S jhjdb1 -Usa -Pp@ssw0rd
+  1> select @@servername
+  2> go
+  3> jhjdb1
+  1> exit
+  ```
