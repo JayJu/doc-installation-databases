@@ -5,6 +5,9 @@
     * 참고자료: [SQL Server를 설치 하는 빠른 시작: Red Hat에 SQL Server를 설치하고 데이터베이스 만들기](https://docs.microsoft.com/ko-kr/sql/linux/quickstart-install-connect-red-hat?view=sql-server-linux-2017)
 ---
 
+* 주의
+  * **SQLServer 서비스 시작을 휘한 최소 메모리는 2G 이므로 OS메모리가 적어도 3G는 되어야 함.**
+  
 #### 1. yum 업데이트
   * yum update
   ```
