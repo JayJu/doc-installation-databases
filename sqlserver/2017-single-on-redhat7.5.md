@@ -105,5 +105,13 @@
   ```
   $ sudo systemctl restart mssql-server
   ```
-2. 파라미터 해지/삭제
+2. 파라미터 제거
+  * mssql-conf unset 파라미터명
+  ```
+  $ sudo /opt/mssql/bin/mssql-conf unset memory.memorylimitmb
+  ```
+  * 서비스 재시작
+  ```
+  $ sudo systemctl restart mssql-server
+  ```
 3. 
