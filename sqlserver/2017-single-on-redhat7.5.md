@@ -60,7 +60,7 @@
   $ sudo journalctl -u mssql-server --no-pager | more
   $ sudo cat /var/opt/mssql/mssql.conf 
   ```
-  
+ 
 #### 4. SQL Server command line tools 설치
   * repository 구성 파일 다운로드
   ```
