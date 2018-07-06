@@ -99,6 +99,7 @@
 1. 파라미터 설정
   * mssql-conf set 파라미터명 파라미터값
   ```
+  $ sudo /opt/mssql/bin/mssql-conf set sqlagent.enabled true
   $ sudo /opt/mssql/bin/mssql-conf set memory.memorylimitmb 3328
   ```
   
